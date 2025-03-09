@@ -1,78 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soft boys presents</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f8f8f8;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            font-size: 24px;
-        }
-        section {
-            margin: 40px 0;
-        }
-        a {
-            display: inline-block;
-            background-color: #ff4500;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-        }
-        a:hover {
-            background-color: #e03e00;
-        }
-        iframe {
-            width: 80%;
-            max-width: 600px;
-            height: 315px;
-            border: none;
-        }
-        form input, button {
-            padding: 10px;
-            font-size: 16px;
-            margin-top: 10px;
-        }
     </style>
 </head>
+<style>
+    /* Simple CSS Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: sans-serif;
+        line-height: 1.5;
+        background-color: white;
+        color: black;
+    }
+
+    .splash {
+        background-image: url('img/splash.jpeg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: white;
+        padding: 1rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .fa-instagram {
+        color: white;
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .link {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background-color: #f1356d;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 1rem;
+    }
+</style>
+
 <body>
-    <header>
-        Soft boys presents
-    </header>
-    
-    <section>
-        <h2>Looking for our next show?</h2>
-        <a href="#">Get Tickets Here</a>
-    </section>
-    
-    <section>
-        <h2>Never been to a soft boys show?</h2>
-        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-    </section>
-    
-    <section>
-      <div class="ml-embedded" data-form="uiVyfj"></div>
-    </section>
+    <div class="splash">
+        <header>
+            <h1>Soft boys presents</h1>
+            <a href="https://www.instagram.com/softboyspresents" target="_blank">
+                <i class="fab fa-instagram fa-xl"></i>
+            </a>
+        </header>
+
+        <section>
+            <h2>Looking for our next show?</h2>
+            <a class="link" href="https://simpli.events/e/best-friday">Get Tickets Here</a>
+        </section>
+
+        <section>
+            <h2>Never been to a soft boys show?</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </section>
+
+        <section>
+            <div class="ml-embedded" data-form="uiVyfj"></div>
+          </section>
+    </div>
+
+
+
 </body>
-      <!-- MailerLite Universal -->
+<!-- MailerLite Universal -->
 <script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    (function (w, d, e, u, f, l, n) {
+        w[f] = w[f] || function () {
+            (w[f].q = w[f].q || [])
+            .push(arguments);
+        }, l = d.createElement(e), l.async = 1, l.src = u,
+        n = d.getElementsByTagName(e)[0], n.parentNode.insertBefore(l, n);
+    })
+        (window, document, 'script', 'https://assets.mailerlite.com/js/universal.js', 'ml');
     ml('account', '1349568');
 </script>
 <!-- End MailerLite Universal -->
-</html>
 
+</html>
