@@ -28,32 +28,39 @@
         background-image: url('img/splash.jpeg');
         background-size: cover;
         background-position: center;
-        height: 100vh;
+        min-height: 100vh;
         overflow-y: auto;
+        display: flex;
+        flex-direction: column;
     }
 
     header {
+        flex-direction: column;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 1rem;
         background-color: rgba(0, 0, 0, 0.5);
+        flex-wrap: wrap;
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         color: white;
-        padding: 1rem;
+        padding: 1rem 0;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        flex: 1 1 100%;
+        text-align: center;
     }
 
     .fa-instagram {
         color: white;
         font-size: 2rem;
+        text-align: center;
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         color: white;
         padding: 1rem;
         text-align: center;
@@ -77,6 +84,39 @@
         border-radius: 5px;
         margin-top: 1rem;
     }
+
+    /* Responsive iframe */
+    iframe {
+        width: 100%;
+        max-width: 560px;
+        aspect-ratio: 16 / 9;
+        border: none;
+    }
+
+    /* MEDIA QUERIES */
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            padding: 1rem 0.5rem;
+        }
+
+        .link {
+            font-size: 1rem;
+            padding: 0.75rem 1.5rem;
+        }
+
+        .fa-instagram {
+            margin-top: 0.5rem;
+        }
+
+        section {
+            padding: 1.5rem 1rem;
+        }
+    }
 </style>
 
 <body>
@@ -90,17 +130,21 @@
 
         <section>
             <h2>Looking for our next show?</h2>
-            <a class="link" href="https://simpli.events/e/best-friday">Get Tickets Here</a>
+            <a class="link"
+                href="https://www.eventbrite.ca/e/soft-boys-presents-its-gonna-be-may-tickets-1351985859099?aff=home">Get
+                Tickets Here</a>
         </section>
 
         <section>
             <h2>Never been to a soft boys show?</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </section>
+            <iframe width="560" height="315" src="https://youtu.be/bR35VHxpTEc" frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
 
         <section>
             <div class="ml-embedded" data-form="uiVyfj"></div>
-          </section>
+        </section>
     </div>
 
 
@@ -111,9 +155,9 @@
     (function (w, d, e, u, f, l, n) {
         w[f] = w[f] || function () {
             (w[f].q = w[f].q || [])
-            .push(arguments);
+                .push(arguments);
         }, l = d.createElement(e), l.async = 1, l.src = u,
-        n = d.getElementsByTagName(e)[0], n.parentNode.insertBefore(l, n);
+            n = d.getElementsByTagName(e)[0], n.parentNode.insertBefore(l, n);
     })
         (window, document, 'script', 'https://assets.mailerlite.com/js/universal.js', 'ml');
     ml('account', '1349568');
